@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Terre &amp; Table – Art de la table à Nabeul (démo)</title>
-  <meta name="description" content="Site vitrine de démonstration pour une boutique fictive d'art de la table à Nabeul : vaisselle, batteries de cuisine, liste de mariage, offre professionnelle, FAQ avec assistant et formulaire de contact.">
+  <title>Terre &amp; Table – Art de la table à Nabeul</title>
+  <meta name="description" content="Terre &amp; Table, boutique d'art de la table à Nabeul : vaisselle en grès, services à thé, batteries de cuisine, liste de mariage, trousseau et offre pour cafés, restaurants et hôtels. Livraison partout en Tunisie.">
   <meta name="robots" content="noindex">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; form-action 'self'; base-uri 'none'; object-src 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#2f5d6e">
-  <meta property="og:title" content="Terre &amp; Table – Art de la table à Nabeul (démo)">
-  <meta property="og:description" content="Site vitrine de démonstration pour une boutique fictive d'art de la table à Nabeul.">
+  <meta property="og:title" content="Terre &amp; Table – Art de la table à Nabeul">
+  <meta property="og:description" content="Vaisselle, services à thé, batteries de cuisine, liste de mariage et offre professionnelle.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:image" content="https://wajihjemli.github.io/demos-sites-web/site-vitrine/images/accueil-cuisine.webp">
@@ -20,9 +20,6 @@
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
-  <div class="demo-banner" role="note">
-    Site de démonstration : « Terre &amp; Table » est une entreprise <strong>fictive</strong>.
-  </div>
 
   <header class="site-header">
     <div class="container header-inner">
@@ -50,11 +47,16 @@
         <div class="hero-text">
           <p class="eyebrow">Art de la table · Nabeul</p>
           <h1>Une belle table, du quotidien aux grandes occasions</h1>
-          <p class="lead">Vaisselle en grès, services complets, thé et café, batteries de cuisine : nous vous aidons à composer une table qui vous ressemble, pour la maison, un mariage ou un établissement.</p>
+          <p class="lead">Vaisselle en grès, services à thé, batteries de cuisine : nous vous aidons à composer une table qui vous ressemble, pour la maison, un mariage ou votre établissement.</p>
           <div class="hero-actions">
-            <a class="btn" href="#collections">Voir les collections</a>
+            <a class="btn" href="#collections">Découvrir les collections</a>
             <a class="btn btn-ghost" href="#mariage">Liste de mariage</a>
           </div>
+          <ul class="reassurance" aria-label="Nos engagements">
+            <li>Livraison partout en Tunisie</li>
+            <li>Pièces vendues à l'unité</li>
+            <li>Tarifs professionnels</li>
+          </ul>
         </div>
         <figure class="hero-photo">
           <img src="images/accueil-cuisine.webp" width="736" height="552" fetchpriority="high"
@@ -66,9 +68,10 @@
     <section id="boutique" class="section">
       <div class="container two-col">
         <div>
-          <h2>La boutique</h2>
-          <p>Terre &amp; Table est une boutique imaginée pour cette démonstration. Elle représente le type de commerce local qui a besoin d'un site simple : montrer ses collections, répondre aux questions fréquentes et recevoir des demandes de devis.</p>
-          <p>Nous sélectionnons des pièces solides et faciles à vivre : grès émaillé, finitions mates, couleurs neutres qui s'accordent entre elles.</p>
+          <p class="eyebrow">La boutique</p>
+          <h2>Des pièces belles, solides et faciles à vivre</h2>
+          <p>Chez Terre &amp; Table, nous sélectionnons une vaisselle qui supporte le quotidien sans renoncer à l'élégance : grès émaillé, finitions mates, couleurs neutres qui s'accordent entre elles.</p>
+          <p>Venez composer votre table en boutique, ou demandez conseil en ligne : nous vous répondons sous 48 heures.</p>
         </div>
         <ul class="facts">
           <li><strong>Pièces à l'unité ou en service</strong><span>Complétez votre vaisselle à votre rythme</span></li>
@@ -80,44 +83,71 @@
 
     <section id="collections" class="section section-alt">
       <div class="container">
-        <h2>Collections</h2>
-        <p class="section-intro">Une sélection de nos gammes. Les prix sont fictifs et donnés à titre d'exemple.</p>
-        <div class="cards">
-          <article class="card">
-            <img class="card-img" src="images/gres-gris.webp" width="736" height="552" loading="lazy" decoding="async" alt="Assiettes et bols en grès gris à liseré argenté disposés sur une table blanche">
+        <div class="section-head">
+          <p class="eyebrow">Collections</p>
+          <h2>Nos gammes du moment</h2>
+          <p class="section-intro">Touchez ou cliquez une photo pour voir le détail du produit.</p>
+        </div>
+        <div class="products">
+          <article class="product">
+            <button type="button" class="product-media" data-product="gres-gris" aria-haspopup="dialog">
+              <img src="images/gres-gris.webp" width="736" height="552" loading="lazy" decoding="async" alt="Assiettes et bols en grès gris à liseré argenté disposés sur une table blanche">
+              <span class="product-cta" aria-hidden="true">Voir le produit</span>
+              <span class="sr-only">Voir le détail : Grès gris, liseré argent</span>
+            </button>
             <h3>Grès gris, liseré argent</h3>
-            <p>Assiettes plates, creuses et bols empilables, au liseré argenté discret.</p>
-            <p class="price">Service 6 personnes : 290 TND</p>
+            <p>Assiettes et bols empilables au liseré argenté discret.</p>
+            <p class="price">Service 6 personnes · 290 TND</p>
           </article>
-          <article class="card">
-            <img class="card-img" src="images/noir-mat.webp" width="736" height="552" loading="lazy" decoding="async" alt="Vaisselle noire mate avec tasses et couverts dorés sur une table dressée">
+          <article class="product">
+            <button type="button" class="product-media" data-product="noir-mat" aria-haspopup="dialog">
+              <img src="images/noir-mat.webp" width="736" height="552" loading="lazy" decoding="async" alt="Vaisselle noire mate avec tasses et couverts dorés sur une table dressée">
+              <span class="product-cta" aria-hidden="true">Voir le produit</span>
+              <span class="sr-only">Voir le détail : Noir mat</span>
+            </button>
             <h3>Noir mat</h3>
             <p>Une table graphique, sublimée par des couverts dorés.</p>
-            <p class="price">Service 6 personnes : 340 TND</p>
+            <p class="price">Service 6 personnes · 340 TND</p>
           </article>
-          <article class="card">
-            <img class="card-img" src="images/beige-rotin.webp" width="736" height="552" loading="lazy" decoding="async" alt="Assiettes et bol beige clair posés sur un set de table rond en fibres tressées">
+          <article class="product">
+            <button type="button" class="product-media" data-product="beige-rotin" aria-haspopup="dialog">
+              <img src="images/beige-rotin.webp" width="736" height="552" loading="lazy" decoding="async" alt="Assiettes et bol beige clair posés sur un set de table rond en fibres tressées">
+              <span class="product-cta" aria-hidden="true">Voir le produit</span>
+              <span class="sr-only">Voir le détail : Naturel et tressé</span>
+            </button>
             <h3>Naturel &amp; tressé</h3>
-            <p>Tons sable, sets et paniers tressés pour une table chaleureuse.</p>
-            <p class="price">Assiette à partir de 18 TND</p>
+            <p>Tons sable et sets tressés pour une table chaleureuse.</p>
+            <p class="price">Assiette dès 18 TND</p>
           </article>
-          <article class="card">
-            <img class="card-img" src="images/the-pois.webp" width="736" height="552" loading="lazy" decoding="async" alt="Service à thé blanc à pois noirs, tasses à anses dorées et présentoir à étages">
-            <h3>Thé &amp; café</h3>
-            <p>Tasses, théières et présentoirs à étages pour recevoir.</p>
-            <p class="price">Coffret 6 tasses : 120 TND</p>
+          <article class="product">
+            <button type="button" class="product-media" data-product="the-pois" aria-haspopup="dialog">
+              <img src="images/the-pois.webp" width="736" height="552" loading="lazy" decoding="async" alt="Service à thé blanc à pois noirs, tasses à anses dorées et présentoir à étages">
+              <span class="product-cta" aria-hidden="true">Voir le produit</span>
+              <span class="sr-only">Voir le détail : Thé et café à pois</span>
+            </button>
+            <h3>Thé &amp; café à pois</h3>
+            <p>Tasses, présentoir et boîtes assortis pour recevoir.</p>
+            <p class="price">Coffret 6 tasses · 120 TND</p>
           </article>
-          <article class="card">
-            <img class="card-img" src="images/cuisine-casseroles.webp" width="735" height="551" loading="lazy" decoding="async" alt="Faitouts et poêle noirs à poignées en bois sur un plan de travail de cuisine">
-            <h3>Batteries de cuisine</h3>
-            <p>Faitouts, poêles et ustensiles assortis, poignées effet bois.</p>
-            <p class="price">Batterie 7 pièces : 450 TND</p>
+          <article class="product">
+            <button type="button" class="product-media" data-product="cuisine-casseroles" aria-haspopup="dialog">
+              <img src="images/cuisine-casseroles.webp" width="735" height="551" loading="lazy" decoding="async" alt="Faitouts et poêle noirs à poignées en bois sur un plan de travail de cuisine">
+              <span class="product-cta" aria-hidden="true">Voir le produit</span>
+              <span class="sr-only">Voir le détail : Batterie de cuisine</span>
+            </button>
+            <h3>Batterie de cuisine</h3>
+            <p>Faitouts, poêle et ustensiles assortis, poignées effet bois.</p>
+            <p class="price">7 pièces · 450 TND</p>
           </article>
-          <article class="card">
-            <img class="card-img" src="images/faitouts.webp" width="735" height="735" loading="lazy" decoding="async" alt="Ensemble de faitouts et plat rectangulaire noirs avec couvercles en verre et boutons en bois">
+          <article class="product">
+            <button type="button" class="product-media" data-product="faitouts" aria-haspopup="dialog">
+              <img src="images/faitouts.webp" width="735" height="735" loading="lazy" decoding="async" alt="Ensemble de faitouts et plat rectangulaire noirs avec couvercles en verre et boutons en bois">
+              <span class="product-cta" aria-hidden="true">Voir le produit</span>
+              <span class="sr-only">Voir le détail : Cocottes et plats</span>
+            </button>
             <h3>Cocottes &amp; plats</h3>
-            <p>Couvercles en verre, plat à four rectangulaire assorti.</p>
-            <p class="price">À partir de 85 TND</p>
+            <p>Couvercles en verre et plat à four rectangulaire assorti.</p>
+            <p class="price">Dès 85 TND</p>
           </article>
         </div>
       </div>
@@ -125,8 +155,10 @@
 
     <section id="mariage" class="section">
       <div class="container">
-        <h2>Mariage, trousseau et professionnels</h2>
-        <p class="section-intro">Des formules pour les grands projets. Conditions fictives.</p>
+        <div class="section-head">
+          <p class="eyebrow">Mariage &amp; professionnels</p>
+          <h2>Des formules pour les grands projets</h2>
+        </div>
         <div class="offers">
           <div class="offer">
             <h3>Liste de mariage</h3>
@@ -138,6 +170,7 @@
             </ul>
           </div>
           <div class="offer offer-featured">
+            <p class="offer-badge">Le plus demandé</p>
             <h3>Trousseau complet</h3>
             <p class="offer-price">Sur devis</p>
             <ul>
@@ -161,29 +194,35 @@
 
     <section id="inspirations" class="section section-alt">
       <div class="container">
-        <h2>Inspirations</h2>
-        <p class="section-intro">Quelques idées de tables, du dîner en famille à la grande réception.</p>
+        <div class="section-head">
+          <p class="eyebrow">Inspirations</p>
+          <h2>Des idées de tables</h2>
+          <p class="section-intro">Du dîner en famille à la grande réception. Touchez une photo pour voir les pièces utilisées.</p>
+        </div>
         <div class="gallery">
-          <figure>
+          <button type="button" class="gallery-item product-media" data-product="table-beige" aria-haspopup="dialog">
             <img src="images/table-beige.webp" width="736" height="736" loading="lazy" decoding="async" alt="Table ronde nappée de lin dressée avec assiettes et bols beige et verres">
-            <figcaption>Dîner tout en douceur</figcaption>
-          </figure>
-          <figure>
+            <span class="gallery-caption">Dîner tout en douceur</span>
+          </button>
+          <button type="button" class="gallery-item product-media" data-product="service-bleu" aria-haspopup="dialog">
             <img src="images/service-bleu.webp" width="736" height="736" loading="lazy" decoding="async" alt="Service bleu et crème à motif de branches : assiettes, bols et mugs">
-            <figcaption>Bleu et crème, motif végétal</figcaption>
-          </figure>
-          <figure>
+            <span class="gallery-caption">Bleu et crème, motif végétal</span>
+          </button>
+          <button type="button" class="gallery-item product-media" data-product="buffet-reception" aria-haspopup="dialog">
             <img src="images/buffet-reception.webp" width="735" height="735" loading="lazy" decoding="async" alt="Longue table de buffet avec plats, ramequins et plateaux blancs sur chemin de table noir">
-            <figcaption>Buffet de réception</figcaption>
-          </figure>
+            <span class="gallery-caption">Buffet de réception</span>
+          </button>
         </div>
       </div>
     </section>
 
     <section id="faq" class="section">
       <div class="container narrow">
-        <h2>Questions fréquentes</h2>
-        <p class="section-intro">Vous pouvez aussi poser votre question à l'assistant, en bas à droite de l'écran.</p>
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions fréquentes</h2>
+          <p class="section-intro">Vous pouvez aussi poser votre question à l'assistant, en bas à droite de l'écran.</p>
+        </div>
         <div id="faq-list" class="faq-list"></div>
       </div>
     </section>
@@ -191,10 +230,12 @@
     <section id="contact" class="section section-alt">
       <div class="container two-col">
         <div>
-          <h2>Contact</h2>
+          <p class="eyebrow">Contact</p>
+          <h2>Parlons de votre table</h2>
           <p>Une commande, une liste de mariage, un devis professionnel ? Écrivez-nous, nous répondons sous 48 heures ouvrées.</p>
           <ul class="contact-info">
-            <li><strong>Adresse :</strong> Nabeul, Tunisie (adresse fictive)</li>
+            <li><strong>Adresse :</strong> <span class="contact-value"></span></li>
+            <li><strong>Téléphone :</strong> <span class="contact-value"></span></li>
             <li><strong>Horaires :</strong> du mardi au samedi, 9 h – 19 h</li>
           </ul>
         </div>
@@ -225,7 +266,6 @@
             <p class="error" id="message-error"></p>
           </div>
           <button class="btn" type="submit">Envoyer</button>
-          <p class="form-note">Démonstration : aucun message n'est réellement envoyé.</p>
           <p class="form-success" id="form-success" role="status" hidden></p>
         </form>
       </div>
@@ -233,12 +273,43 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>Terre &amp; Table est une entreprise fictive. Ce site est une démonstration réalisée par Wajih Jemli.</p>
-      <p>Photos fournies par Wajih Jemli.</p>
-      <p><a href="../">Voir les autres démos</a></p>
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-logo">Terre &amp; Table</p>
+        <p>Art de la table à Nabeul. Livraison partout en Tunisie.</p>
+      </div>
+      <nav aria-label="Liens du pied de page">
+        <a href="#collections">Collections</a>
+        <a href="#mariage">Mariage &amp; pros</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-credit">Conception du site : Wajih Jemli · <a href="../">Autres réalisations</a></p>
     </div>
   </footer>
+
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-name">
+    <div class="dialog-inner">
+      <button type="button" class="dialog-close" id="dialog-close" aria-label="Fermer la fiche produit" autofocus>×</button>
+      <figure class="dialog-media">
+        <img id="product-image" src="data:," alt="">
+      </figure>
+      <div class="dialog-body">
+        <p class="eyebrow" id="product-category"></p>
+        <h2 id="product-name"></h2>
+        <p class="dialog-price" id="product-price"></p>
+        <p class="dialog-lead" id="product-presentation"></p>
+        <p id="product-description"></p>
+        <h3>Sur la photo</h3>
+        <p id="product-photo"></p>
+        <dl class="dialog-details" id="product-details"></dl>
+        <div class="dialog-actions">
+          <button type="button" class="btn" id="product-request">Demander ce produit</button>
+          <button type="button" class="btn btn-ghost" id="product-back">Continuer la visite</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
 
   <div class="assistant" id="assistant">
     <button class="assistant-toggle" id="assistant-toggle" aria-expanded="false" aria-controls="assistant-panel">
