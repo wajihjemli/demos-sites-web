@@ -11,7 +11,7 @@ Les entreprises présentées dans ces démos sont **fictives** et signalées com
 
 | Dossier | Description | État |
 |---|---|---|
-| `site-vitrine/` | Site vitrine en français, adapté au mobile, avec formulaire de contact et assistant FAQ | À venir |
+| `site-vitrine/` | Atelier de céramique fictif à Nabeul : site vitrine adapté au mobile, formulaire de contact (démo, sans envoi) et assistant FAQ par mots-clés | En ligne |
 
 ## Outils
 
