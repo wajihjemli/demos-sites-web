@@ -4,8 +4,8 @@
   --surface: #ffffff;
   --fg: #22252a;
   --muted: #5d6168;
-  --blue: #1f5f8b;
-  --blue-dark: #164766;
+  --blue: #2f5d6e;
+  --blue-dark: #224553;
   --terra: #b5552f;
   --sand: #e8d9c3;
   --border: #e0d5c5;
@@ -25,8 +25,8 @@
     --surface: #22272e;
     --fg: #eef0f2;
     --muted: #a9afb7;
-    --blue: #6aa8d6;
-    --blue-dark: #8cc0e6;
+    --blue: #7fb3c4;
+    --blue-dark: #a3cad7;
     --terra: #e08a63;
     --sand: #3a3229;
     --border: #333a43;
@@ -98,7 +98,7 @@ a { color: var(--blue); }
 }
 .logo svg { width: 2rem; height: 2rem; }
 .logo circle { fill: var(--blue); }
-.logo path { fill: var(--bg); }
+.logo .logo-ring { fill: none; stroke: var(--bg); stroke-width: 2; }
 
 .menu { display: flex; align-items: center; gap: 1.5rem; }
 .menu a:not(.btn) { color: var(--fg); text-decoration: none; font-weight: 500; }
@@ -187,7 +187,7 @@ a { color: var(--blue); }
 .facts span { color: var(--muted); }
 
 /* Cartes créations */
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1.5rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); gap: 1.5rem; }
 .card {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 1.25rem; box-shadow: var(--shadow);
@@ -198,6 +198,15 @@ a { color: var(--blue); }
   display: block; width: 100%; height: 13rem; object-fit: cover;
   border-radius: 10px; margin-bottom: 1rem; background: var(--sand);
 }
+
+/* Galerie */
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.5rem; }
+.gallery figure { margin: 0; }
+.gallery img {
+  display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover;
+  border-radius: var(--radius); box-shadow: var(--shadow); background: var(--sand);
+}
+.gallery figcaption { margin-top: 0.6rem; font-weight: 600; }
 
 /* Offres */
 .offers { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1.5rem; }

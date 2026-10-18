@@ -3,41 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Atelier Terre &amp; Bleu – Céramique artisanale à Nabeul (démo)</title>
-  <meta name="description" content="Site vitrine de démonstration pour un atelier de céramique fictif à Nabeul : créations, ateliers d'initiation, FAQ avec assistant et formulaire de contact.">
+  <title>Terre &amp; Table – Art de la table à Nabeul (démo)</title>
+  <meta name="description" content="Site vitrine de démonstration pour une boutique fictive d'art de la table à Nabeul : vaisselle, batteries de cuisine, liste de mariage, offre professionnelle, FAQ avec assistant et formulaire de contact.">
   <meta name="robots" content="noindex">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; form-action 'self'; base-uri 'none'; object-src 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#1f5f8b">
-  <meta property="og:title" content="Atelier Terre &amp; Bleu – Céramique artisanale à Nabeul (démo)">
-  <meta property="og:description" content="Site vitrine de démonstration pour un atelier de céramique fictif à Nabeul.">
+  <meta name="theme-color" content="#2f5d6e">
+  <meta property="og:title" content="Terre &amp; Table – Art de la table à Nabeul (démo)">
+  <meta property="og:description" content="Site vitrine de démonstration pour une boutique fictive d'art de la table à Nabeul.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:image" content="https://wajihjemli.github.io/demos-sites-web/site-vitrine/images/vases-nabeul-1280.webp">
+  <meta property="og:image" content="https://wajihjemli.github.io/demos-sites-web/site-vitrine/images/accueil-cuisine.webp">
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%231f5f8b'/%3E%3Cpath d='M10 13h12l-2 10h-8z' fill='%23f6efe4'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232f5d6e'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%23f6efe4' stroke-width='2'/%3E%3C/svg%3E">
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
   <div class="demo-banner" role="note">
-    Site de démonstration : « Atelier Terre &amp; Bleu » est une entreprise <strong>fictive</strong>.
+    Site de démonstration : « Terre &amp; Table » est une entreprise <strong>fictive</strong>.
   </div>
 
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="#accueil">
-        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14"/><path d="M10 13h12l-2 10h-8z"/></svg>
-        <span>Terre &amp; Bleu</span>
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14"/><circle class="logo-ring" cx="16" cy="16" r="8"/></svg>
+        <span>Terre &amp; Table</span>
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="menu">
         <span class="sr-only">Ouvrir le menu</span>
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
       <nav id="menu" class="menu" aria-label="Menu principal">
-        <a href="#atelier">L'atelier</a>
-        <a href="#creations">Créations</a>
-        <a href="#ateliers">Cours</a>
+        <a href="#collections">Collections</a>
+        <a href="#mariage">Mariage &amp; pros</a>
+        <a href="#inspirations">Inspirations</a>
         <a href="#faq">FAQ</a>
         <a class="btn btn-small" href="#contact">Contact</a>
       </nav>
@@ -48,104 +48,139 @@
     <section id="accueil" class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <p class="eyebrow">Céramique artisanale · Nabeul</p>
-          <h1>Des pièces façonnées à la main, pour la table et la maison</h1>
-          <p class="lead">Vaisselle, pièces décoratives et commandes sur mesure, tournées et émaillées dans notre atelier. Venez aussi apprendre le tour lors d'un cours d'initiation.</p>
+          <p class="eyebrow">Art de la table · Nabeul</p>
+          <h1>Une belle table, du quotidien aux grandes occasions</h1>
+          <p class="lead">Vaisselle en grès, services complets, thé et café, batteries de cuisine : nous vous aidons à composer une table qui vous ressemble, pour la maison, un mariage ou un établissement.</p>
           <div class="hero-actions">
-            <a class="btn" href="#creations">Voir les créations</a>
-            <a class="btn btn-ghost" href="#ateliers">Réserver un cours</a>
+            <a class="btn" href="#collections">Voir les collections</a>
+            <a class="btn btn-ghost" href="#mariage">Liste de mariage</a>
           </div>
         </div>
         <figure class="hero-photo">
-          <img src="images/vases-nabeul-1280.webp"
-               srcset="images/vases-nabeul-768.webp 768w, images/vases-nabeul-1280.webp 1280w"
-               sizes="(max-width: 760px) 100vw, 45vw"
-               width="1280" height="720" fetchpriority="high"
-               alt="Rangée de vases en céramique blancs et bleus exposés sur des étagères">
-          <figcaption>Poteries exposées à Nabeul. Photo d'illustration.</figcaption>
+          <img src="images/accueil-cuisine.webp" width="736" height="552" fetchpriority="high"
+               alt="Plan de travail de cuisine avec assiettes et bols effet marbre beige, empilés et dressés">
         </figure>
       </div>
     </section>
 
-    <section id="atelier" class="section">
+    <section id="boutique" class="section">
       <div class="container two-col">
         <div>
-          <h2>L'atelier</h2>
-          <p>Terre &amp; Bleu est un petit atelier imaginé pour cette démonstration. Il représente le type d'entreprise locale qui a besoin d'un site simple : présenter son savoir-faire, répondre aux questions fréquentes et recevoir des demandes.</p>
-          <p>Chaque pièce est tournée, séchée, puis cuite deux fois. Les émaux bleus et blancs rappellent la tradition potière de la région.</p>
+          <h2>La boutique</h2>
+          <p>Terre &amp; Table est une boutique imaginée pour cette démonstration. Elle représente le type de commerce local qui a besoin d'un site simple : montrer ses collections, répondre aux questions fréquentes et recevoir des demandes de devis.</p>
+          <p>Nous sélectionnons des pièces solides et faciles à vivre : grès émaillé, finitions mates, couleurs neutres qui s'accordent entre elles.</p>
         </div>
         <ul class="facts">
-          <li><strong>Fait main</strong><span>Tournage et émaillage à l'atelier</span></li>
-          <li><strong>Sur mesure</strong><span>Services de table pour cafés et restaurants</span></li>
-          <li><strong>Cours</strong><span>Initiation au tour en petit groupe</span></li>
+          <li><strong>Pièces à l'unité ou en service</strong><span>Complétez votre vaisselle à votre rythme</span></li>
+          <li><strong>Liste de mariage &amp; trousseau</strong><span>Une sélection préparée avec vous</span></li>
+          <li><strong>Cafés, restaurants, hôtels</strong><span>Tarifs pour les volumes et réassort</span></li>
         </ul>
       </div>
     </section>
 
-    <section id="creations" class="section section-alt">
+    <section id="collections" class="section section-alt">
       <div class="container">
-        <h2>Créations</h2>
-        <p class="section-intro">Quelques familles de pièces. Les prix sont fictifs et donnés à titre d'exemple ; les photos montrent des céramiques réelles de Nabeul, à titre d'illustration.</p>
+        <h2>Collections</h2>
+        <p class="section-intro">Une sélection de nos gammes. Les prix sont fictifs et donnés à titre d'exemple.</p>
         <div class="cards">
           <article class="card">
-            <img class="card-img" src="images/assiette-nabeul-800.webp" width="800" height="816" loading="lazy" decoding="async" alt="Assiette de Nabeul peinte à la main, décor jaune, vert et noir">
-            <h3>Vaisselle du quotidien</h3>
-            <p>Assiettes, bols et tasses émaillés, compatibles lave-vaisselle.</p>
-            <p class="price">À partir de 25 TND</p>
+            <img class="card-img" src="images/gres-gris.webp" width="736" height="552" loading="lazy" decoding="async" alt="Assiettes et bols en grès gris à liseré argenté disposés sur une table blanche">
+            <h3>Grès gris, liseré argent</h3>
+            <p>Assiettes plates, creuses et bols empilables, au liseré argenté discret.</p>
+            <p class="price">Service 6 personnes : 290 TND</p>
           </article>
           <article class="card">
-            <img class="card-img" src="images/tajine-nabeul-800.webp" width="800" height="656" loading="lazy" decoding="async" alt="Petit tajine bleu et blanc posé sur un plateau en céramique décoré">
-            <h3>Pièces décoratives</h3>
-            <p>Vases, plats de service et carreaux peints à la main.</p>
-            <p class="price">À partir de 60 TND</p>
+            <img class="card-img" src="images/noir-mat.webp" width="736" height="552" loading="lazy" decoding="async" alt="Vaisselle noire mate avec tasses et couverts dorés sur une table dressée">
+            <h3>Noir mat</h3>
+            <p>Une table graphique, sublimée par des couverts dorés.</p>
+            <p class="price">Service 6 personnes : 340 TND</p>
           </article>
           <article class="card">
-            <img class="card-img" src="images/tasse-nabeul-800.webp" width="800" height="623" loading="lazy" decoding="async" alt="Grande tasse en céramique à motifs verts et noirs">
-            <h3>Commandes sur mesure</h3>
-            <p>Services complets pour cafés, restaurants et maisons d'hôtes.</p>
-            <p class="price">Sur devis</p>
+            <img class="card-img" src="images/beige-rotin.webp" width="736" height="552" loading="lazy" decoding="async" alt="Assiettes et bol beige clair posés sur un set de table rond en fibres tressées">
+            <h3>Naturel &amp; tressé</h3>
+            <p>Tons sable, sets et paniers tressés pour une table chaleureuse.</p>
+            <p class="price">Assiette à partir de 18 TND</p>
+          </article>
+          <article class="card">
+            <img class="card-img" src="images/the-pois.webp" width="736" height="552" loading="lazy" decoding="async" alt="Service à thé blanc à pois noirs, tasses à anses dorées et présentoir à étages">
+            <h3>Thé &amp; café</h3>
+            <p>Tasses, théières et présentoirs à étages pour recevoir.</p>
+            <p class="price">Coffret 6 tasses : 120 TND</p>
+          </article>
+          <article class="card">
+            <img class="card-img" src="images/cuisine-casseroles.webp" width="735" height="551" loading="lazy" decoding="async" alt="Faitouts et poêle noirs à poignées en bois sur un plan de travail de cuisine">
+            <h3>Batteries de cuisine</h3>
+            <p>Faitouts, poêles et ustensiles assortis, poignées effet bois.</p>
+            <p class="price">Batterie 7 pièces : 450 TND</p>
+          </article>
+          <article class="card">
+            <img class="card-img" src="images/faitouts.webp" width="735" height="735" loading="lazy" decoding="async" alt="Ensemble de faitouts et plat rectangulaire noirs avec couvercles en verre et boutons en bois">
+            <h3>Cocottes &amp; plats</h3>
+            <p>Couvercles en verre, plat à four rectangulaire assorti.</p>
+            <p class="price">À partir de 85 TND</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="ateliers" class="section">
+    <section id="mariage" class="section">
       <div class="container">
-        <h2>Cours d'initiation</h2>
-        <p class="section-intro">En petit groupe, tout le matériel est fourni. Prix fictifs.</p>
+        <h2>Mariage, trousseau et professionnels</h2>
+        <p class="section-intro">Des formules pour les grands projets. Conditions fictives.</p>
         <div class="offers">
           <div class="offer">
-            <h3>Découverte</h3>
-            <p class="offer-price">70 TND <span>/ personne</span></p>
+            <h3>Liste de mariage</h3>
+            <p class="offer-price">Gratuite</p>
             <ul>
-              <li>2 heures au tour</li>
-              <li>2 pièces façonnées</li>
-              <li>Cuisson et émaillage inclus</li>
+              <li>Sélection préparée en boutique</li>
+              <li>Lien à partager avec vos invités</li>
+              <li>Livraison groupée après la fête</li>
             </ul>
           </div>
           <div class="offer offer-featured">
-            <h3>Week-end</h3>
-            <p class="offer-price">180 TND <span>/ personne</span></p>
+            <h3>Trousseau complet</h3>
+            <p class="offer-price">Sur devis</p>
             <ul>
-              <li>2 demi-journées</li>
-              <li>Tournage et décoration</li>
-              <li>Pièces récupérées sous 3 semaines</li>
+              <li>Vaisselle, thé et café, cuisine</li>
+              <li>Rendez-vous conseil d'une heure</li>
+              <li>Paiement en plusieurs fois</li>
             </ul>
           </div>
           <div class="offer">
-            <h3>Groupe privé</h3>
-            <p class="offer-price">Sur devis</p>
+            <h3>Cafés, restaurants, hôtels</h3>
+            <p class="offer-price">Tarif volume</p>
             <ul>
-              <li>De 4 à 8 personnes</li>
-              <li>Anniversaires, équipes, écoles</li>
-              <li>Date au choix</li>
+              <li>Gammes suivies pour le réassort</li>
+              <li>Échantillons avant commande</li>
+              <li>Livraison sur votre établissement</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="faq" class="section section-alt">
+    <section id="inspirations" class="section section-alt">
+      <div class="container">
+        <h2>Inspirations</h2>
+        <p class="section-intro">Quelques idées de tables, du dîner en famille à la grande réception.</p>
+        <div class="gallery">
+          <figure>
+            <img src="images/table-beige.webp" width="736" height="736" loading="lazy" decoding="async" alt="Table ronde nappée de lin dressée avec assiettes et bols beige et verres">
+            <figcaption>Dîner tout en douceur</figcaption>
+          </figure>
+          <figure>
+            <img src="images/service-bleu.webp" width="736" height="736" loading="lazy" decoding="async" alt="Service bleu et crème à motif de branches : assiettes, bols et mugs">
+            <figcaption>Bleu et crème, motif végétal</figcaption>
+          </figure>
+          <figure>
+            <img src="images/buffet-reception.webp" width="735" height="735" loading="lazy" decoding="async" alt="Longue table de buffet avec plats, ramequins et plateaux blancs sur chemin de table noir">
+            <figcaption>Buffet de réception</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
       <div class="container narrow">
         <h2>Questions fréquentes</h2>
         <p class="section-intro">Vous pouvez aussi poser votre question à l'assistant, en bas à droite de l'écran.</p>
@@ -153,14 +188,14 @@
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section section-alt">
       <div class="container two-col">
         <div>
           <h2>Contact</h2>
-          <p>Une commande, un cours, une question ? Écrivez-nous, nous répondons sous 48 heures ouvrées.</p>
+          <p>Une commande, une liste de mariage, un devis professionnel ? Écrivez-nous, nous répondons sous 48 heures ouvrées.</p>
           <ul class="contact-info">
             <li><strong>Adresse :</strong> Nabeul, Tunisie (adresse fictive)</li>
-            <li><strong>Horaires :</strong> du mardi au samedi, 9 h – 18 h</li>
+            <li><strong>Horaires :</strong> du mardi au samedi, 9 h – 19 h</li>
           </ul>
         </div>
         <form id="contact-form" class="form" method="post" action="#" novalidate>
@@ -178,8 +213,9 @@
             <label for="sujet">Sujet</label>
             <select id="sujet" name="sujet">
               <option>Commande</option>
-              <option>Cours d'initiation</option>
-              <option>Commande sur mesure</option>
+              <option>Liste de mariage</option>
+              <option>Trousseau</option>
+              <option>Devis professionnel</option>
               <option>Autre question</option>
             </select>
           </div>
@@ -198,15 +234,9 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>Atelier Terre &amp; Bleu est une entreprise fictive. Ce site est une démonstration réalisée par Wajih Jemli.</p>
+      <p>Terre &amp; Table est une entreprise fictive. Ce site est une démonstration réalisée par Wajih Jemli.</p>
+      <p>Photos fournies par Wajih Jemli.</p>
       <p><a href="../">Voir les autres démos</a></p>
-      <details class="credits">
-        <summary>Crédits photos</summary>
-        <ul>
-          <li>Poteries exposées à Nabeul : SouthAngel, <a href="https://commons.wikimedia.org/wiki/File:Potteries_in_Nabeul.jpg">Wikimedia Commons</a>, licence <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.fr">CC BY-SA 2.0</a>. Image recadrée et compressée.</li>
-          <li>Assiette, tajine et tasse de Nabeul : Nicholas Johnson, Wikimedia Commons (<a href="https://commons.wikimedia.org/wiki/File:Medium_Nabeul_plate.jpg">1</a>, <a href="https://commons.wikimedia.org/wiki/File:Miniature_tajine_and_stand.jpg">2</a>, <a href="https://commons.wikimedia.org/wiki/File:Tunisian_cup.jpg">3</a>), domaine public (<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr">CC0</a>).</li>
-        </ul>
-      </details>
     </div>
   </footer>
 
@@ -217,7 +247,7 @@
     </button>
     <div class="assistant-panel" id="assistant-panel" role="dialog" aria-label="Assistant FAQ" hidden>
       <div class="assistant-head">
-        <strong>Assistant de l'atelier</strong>
+        <strong>Assistant de la boutique</strong>
         <button class="assistant-close" id="assistant-close" aria-label="Fermer l'assistant">×</button>
       </div>
       <div class="assistant-messages" id="assistant-messages" aria-live="polite"></div>

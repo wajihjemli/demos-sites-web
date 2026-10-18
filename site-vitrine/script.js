@@ -3,42 +3,52 @@
 const FAQ = [
   {
     question: "Livrez-vous en dehors de Nabeul ?",
-    answer: "Oui, nous livrons partout en Tunisie sous 3 à 5 jours ouvrés. Les pièces sont emballées une à une pour éviter la casse.",
+    answer: "Oui, nous livrons partout en Tunisie sous 3 à 5 jours ouvrés. La vaisselle est emballée pièce par pièce pour éviter la casse.",
     keywords: ["livr", "envoi", "envoy", "expedi", "tunis", "sousse", "sfax", "colis", "transport", "delai"]
   },
   {
     question: "La vaisselle passe-t-elle au lave-vaisselle et au micro-ondes ?",
-    answer: "La vaisselle du quotidien passe au lave-vaisselle et au micro-ondes. Les pièces décoratives peintes à la main se lavent à la main.",
-    keywords: ["lave", "vaisselle", "micro", "entretien", "laver", "nettoy"]
+    answer: "La vaisselle en grès passe au lave-vaisselle et au micro-ondes. Seules les pièces à liseré argenté ou doré ne vont pas au micro-ondes.",
+    keywords: ["lave", "vaisselle", "micro", "entretien", "laver", "nettoy", "gres", "argent", "dore"]
   },
   {
-    question: "Comment réserver un cours d'initiation ?",
-    answer: "Remplissez le formulaire de contact en choisissant le sujet « Cours d'initiation » et indiquez les dates qui vous conviennent. Nous confirmons la place sous 48 heures.",
-    keywords: ["cours", "reserv", "initiation", "atelier", "apprendre", "tour", "inscri", "place", "week"]
+    question: "Vos casseroles sont-elles compatibles avec l'induction ?",
+    answer: "Oui, nos batteries de cuisine et cocottes fonctionnent sur tous les feux, induction comprise. Les couvercles en verre vont au four jusqu'à 180 °C.",
+    keywords: ["induction", "casserol", "poele", "faitout", "cocotte", "feu", "gaz", "four", "plaque", "cuisson", "batterie"]
   },
   {
-    question: "Faut-il savoir déjà faire de la poterie pour un cours ?",
-    answer: "Non, les cours Découverte et Week-end sont pensés pour les débutants. Tout le matériel et le tablier sont fournis. Les enfants sont accueillis dès 8 ans, avec un adulte.",
-    keywords: ["debut", "niveau", "experience", "savoir", "jamais", "materiel", "enfant", "age"]
+    question: "Comment fonctionne la liste de mariage ?",
+    answer: "Nous composons la liste avec vous en boutique, puis vous partagez un lien avec vos invités. Tout est livré en une fois après la fête. Le service est gratuit.",
+    keywords: ["mariage", "liste", "invite", "cadeau", "fete", "fiance", "trousseau", "jhez"]
   },
   {
-    question: "Acceptez-vous les commandes sur mesure ?",
-    answer: "Oui, pour les cafés, restaurants, maisons d'hôtes ou particuliers. Comptez 4 à 8 semaines selon la quantité. Décrivez votre projet dans le formulaire pour recevoir un devis.",
-    keywords: ["mesure", "devis", "restaurant", "cafe", "hotel", "personnalis", "logo", "quantite", "commande", "professionnel"]
+    question: "Proposez-vous des tarifs pour les cafés, restaurants et hôtels ?",
+    answer: "Oui, nous proposons des tarifs selon les volumes, des échantillons avant commande et des gammes suivies pour le réassort. Demandez un devis via le formulaire.",
+    keywords: ["restaurant", "cafe", "hotel", "professionnel", "pro", "volume", "devis", "quantite", "etablissement", "gros"]
+  },
+  {
+    question: "Peut-on acheter les pièces à l'unité ?",
+    answer: "Oui, toutes les pièces de nos collections sont vendues à l'unité, ce qui permet de compléter ou remplacer un service à tout moment.",
+    keywords: ["unite", "piece", "remplac", "complet", "casse", "assiette", "bol", "tasse", "mug"]
+  },
+  {
+    question: "Puis-je échanger un article ?",
+    answer: "Les articles non utilisés peuvent être échangés sous 14 jours, avec le ticket de caisse, dans leur emballage d'origine.",
+    keywords: ["echang", "retour", "rembours", "rendre", "garantie", "abime", "defaut"]
   },
   {
     question: "Quels moyens de paiement acceptez-vous ?",
-    answer: "Espèces et virement bancaire. Pour les commandes sur mesure, un acompte de 30 % est demandé à la validation du devis.",
-    keywords: ["pai", "payer", "carte", "virement", "espece", "acompte", "prix", "tarif", "cout", "combien"]
+    answer: "Espèces, carte bancaire et virement. Pour un trousseau complet, le paiement peut se faire en plusieurs fois.",
+    keywords: ["pai", "payer", "carte", "virement", "espece", "plusieurs", "facilit", "prix", "tarif", "cout", "combien"]
   },
   {
     question: "Quels sont vos horaires ?",
-    answer: "L'atelier est ouvert du mardi au samedi, de 9 h à 18 h. Le dimanche et le lundi, il est fermé.",
-    keywords: ["horaire", "heure", "ouvert", "ferme", "dimanche", "lundi", "samedi", "visite", "venir", "adresse"]
+    answer: "La boutique est ouverte du mardi au samedi, de 9 h à 19 h. Elle est fermée le dimanche et le lundi.",
+    keywords: ["horaire", "heure", "ouvert", "ferme", "dimanche", "lundi", "samedi", "visite", "venir", "adresse", "boutique"]
   }
 ];
 
-const SUGGESTIONS = ["Livrez-vous à Tunis ?", "Comment réserver un cours ?", "Moyens de paiement ?"];
+const SUGGESTIONS = ["Livrez-vous à Tunis ?", "Liste de mariage ?", "Compatible induction ?"];
 
 function normalize(text) {
   return text
@@ -127,7 +137,7 @@ function reply(question) {
   addMessage(question, "user");
   const normalized = normalize(question).trim();
   if (/^(bonjour|salut|bonsoir|salam|hello|aslema)\b/.test(normalized) && normalized.split(/\s+/).length <= 3) {
-    addMessage("Bonjour ! Posez-moi votre question sur les créations, la livraison ou les cours.", "bot");
+    addMessage("Bonjour ! Posez-moi votre question sur les collections, la livraison ou la liste de mariage.", "bot");
     return;
   }
   if (/^(merci|super|parfait|ok)\b/.test(normalized)) {
@@ -138,7 +148,7 @@ function reply(question) {
   if (match) {
     addMessage(match.answer, "bot");
   } else {
-    addMessage("Je n'ai pas trouvé de réponse à cette question. L'équipe de l'atelier peut vous répondre directement :", "bot", true);
+    addMessage("Je n'ai pas trouvé de réponse à cette question. L'équipe de la boutique peut vous répondre directement :", "bot", true);
   }
 }
 
@@ -147,7 +157,7 @@ function setAssistantOpen(open) {
   assistantToggle.setAttribute("aria-expanded", String(open));
   if (open) {
     if (!assistantStarted) {
-      addMessage("Bonjour ! Je réponds aux questions fréquentes sur l'atelier. Que souhaitez-vous savoir ?", "bot");
+      addMessage("Bonjour ! Je réponds aux questions fréquentes sur la boutique. Que souhaitez-vous savoir ?", "bot");
       for (const suggestion of SUGGESTIONS) {
         const button = document.createElement("button");
         button.type = "button";
@@ -213,7 +223,7 @@ contactForm.addEventListener("submit", (event) => {
     return;
   }
   const name = contactForm.elements.nom.value.trim();
-  formSuccess.textContent = `Merci ${name} ! Dans un vrai site, votre message serait maintenant transmis à l'atelier.`;
+  formSuccess.textContent = `Merci ${name} ! Dans un vrai site, votre message serait maintenant transmis à la boutique.`;
   formSuccess.hidden = false;
   contactForm.reset();
 });
