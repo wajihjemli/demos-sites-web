@@ -6,17 +6,27 @@
   <title>Atelier Terre &amp; Bleu – Céramique artisanale à Nabeul (démo)</title>
   <meta name="description" content="Site vitrine de démonstration pour un atelier de céramique fictif à Nabeul : créations, ateliers d'initiation, FAQ avec assistant et formulaire de contact.">
   <meta name="robots" content="noindex">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; form-action 'self'; base-uri 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#1f5f8b">
+  <meta property="og:title" content="Atelier Terre &amp; Bleu – Céramique artisanale à Nabeul (démo)">
+  <meta property="og:description" content="Site vitrine de démonstration pour un atelier de céramique fictif à Nabeul.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="https://wajihjemli.github.io/demos-sites-web/site-vitrine/images/vases-nabeul-1280.webp">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%231f5f8b'/%3E%3Cpath d='M10 13h12l-2 10h-8z' fill='%23f6efe4'/%3E%3C/svg%3E">
 </head>
 <body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
   <div class="demo-banner" role="note">
     Site de démonstration : « Atelier Terre &amp; Bleu » est une entreprise <strong>fictive</strong>.
   </div>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#accueil" aria-label="Atelier Terre et Bleu, retour en haut">
+      <a class="logo" href="#accueil">
         <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14"/><path d="M10 13h12l-2 10h-8z"/></svg>
         <span>Terre &amp; Bleu</span>
       </a>
@@ -34,7 +44,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="contenu">
     <section id="accueil" class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
@@ -46,14 +56,14 @@
             <a class="btn btn-ghost" href="#ateliers">Réserver un cours</a>
           </div>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <svg viewBox="0 0 300 300">
-            <circle class="art-sun" cx="150" cy="150" r="130"/>
-            <path class="art-vase" d="M115 70h70c-4 18-18 26-18 40 0 20 45 40 45 90 0 32-28 50-62 50s-62-18-62-50c0-50 45-70 45-90 0-14-14-22-18-40z"/>
-            <path class="art-band" d="M88 190c40 14 84 14 124 0v18c-40 14-84 14-124 0z"/>
-            <circle class="art-dot" cx="125" cy="160" r="5"/><circle class="art-dot" cx="150" cy="155" r="5"/><circle class="art-dot" cx="175" cy="160" r="5"/>
-          </svg>
-        </div>
+        <figure class="hero-photo">
+          <img src="images/vases-nabeul-1280.webp"
+               srcset="images/vases-nabeul-768.webp 768w, images/vases-nabeul-1280.webp 1280w"
+               sizes="(max-width: 760px) 100vw, 45vw"
+               width="1280" height="720" fetchpriority="high"
+               alt="Rangée de vases en céramique blancs et bleus exposés sur des étagères">
+          <figcaption>Poteries exposées à Nabeul. Photo d'illustration.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -75,22 +85,22 @@
     <section id="creations" class="section section-alt">
       <div class="container">
         <h2>Créations</h2>
-        <p class="section-intro">Quelques familles de pièces. Les prix sont fictifs et donnés à titre d'exemple.</p>
+        <p class="section-intro">Quelques familles de pièces. Les prix sont fictifs et donnés à titre d'exemple ; les photos montrent des céramiques réelles de Nabeul, à titre d'illustration.</p>
         <div class="cards">
           <article class="card">
-            <div class="card-art art-1" aria-hidden="true"></div>
+            <img class="card-img" src="images/assiette-nabeul-800.webp" width="800" height="816" loading="lazy" decoding="async" alt="Assiette de Nabeul peinte à la main, décor jaune, vert et noir">
             <h3>Vaisselle du quotidien</h3>
             <p>Assiettes, bols et tasses émaillés, compatibles lave-vaisselle.</p>
             <p class="price">À partir de 25 TND</p>
           </article>
           <article class="card">
-            <div class="card-art art-2" aria-hidden="true"></div>
+            <img class="card-img" src="images/tajine-nabeul-800.webp" width="800" height="656" loading="lazy" decoding="async" alt="Petit tajine bleu et blanc posé sur un plateau en céramique décoré">
             <h3>Pièces décoratives</h3>
             <p>Vases, plats de service et carreaux peints à la main.</p>
             <p class="price">À partir de 60 TND</p>
           </article>
           <article class="card">
-            <div class="card-art art-3" aria-hidden="true"></div>
+            <img class="card-img" src="images/tasse-nabeul-800.webp" width="800" height="623" loading="lazy" decoding="async" alt="Grande tasse en céramique à motifs verts et noirs">
             <h3>Commandes sur mesure</h3>
             <p>Services complets pour cafés, restaurants et maisons d'hôtes.</p>
             <p class="price">Sur devis</p>
@@ -153,7 +163,7 @@
             <li><strong>Horaires :</strong> du mardi au samedi, 9 h – 18 h</li>
           </ul>
         </div>
-        <form id="contact-form" class="form" novalidate>
+        <form id="contact-form" class="form" method="post" action="#" novalidate>
           <div class="field">
             <label for="nom">Nom</label>
             <input id="nom" name="nom" type="text" autocomplete="name" required>
@@ -190,13 +200,20 @@
     <div class="container">
       <p>Atelier Terre &amp; Bleu est une entreprise fictive. Ce site est une démonstration réalisée par Wajih Jemli.</p>
       <p><a href="../">Voir les autres démos</a></p>
+      <details class="credits">
+        <summary>Crédits photos</summary>
+        <ul>
+          <li>Poteries exposées à Nabeul : SouthAngel, <a href="https://commons.wikimedia.org/wiki/File:Potteries_in_Nabeul.jpg">Wikimedia Commons</a>, licence <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.fr">CC BY-SA 2.0</a>. Image recadrée et compressée.</li>
+          <li>Assiette, tajine et tasse de Nabeul : Nicholas Johnson, Wikimedia Commons (<a href="https://commons.wikimedia.org/wiki/File:Medium_Nabeul_plate.jpg">1</a>, <a href="https://commons.wikimedia.org/wiki/File:Miniature_tajine_and_stand.jpg">2</a>, <a href="https://commons.wikimedia.org/wiki/File:Tunisian_cup.jpg">3</a>), domaine public (<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr">CC0</a>).</li>
+        </ul>
+      </details>
     </div>
   </footer>
 
   <div class="assistant" id="assistant">
     <button class="assistant-toggle" id="assistant-toggle" aria-expanded="false" aria-controls="assistant-panel">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4z"/></svg>
-      <span>Une question ?</span>
+      <span class="assistant-label">Une question ?</span>
     </button>
     <div class="assistant-panel" id="assistant-panel" role="dialog" aria-label="Assistant FAQ" hidden>
       <div class="assistant-head">

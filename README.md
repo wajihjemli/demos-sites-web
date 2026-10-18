@@ -25,3 +25,12 @@ python3 -m http.server 8000
 ```
 
 Puis ouvrir `http://localhost:8000/`.
+
+## Crédits photos (site-vitrine)
+
+Photos d'illustration de céramiques réelles de Nabeul, issues de Wikimedia Commons, redimensionnées et converties en WebP :
+
+- `vases-nabeul-*.webp` : « Potteries in Nabeul », SouthAngel, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) – [source](https://commons.wikimedia.org/wiki/File:Potteries_in_Nabeul.jpg)
+- `assiette-nabeul-800.webp` : « Medium Nabeul plate », Nicholas Johnson, CC0 – [source](https://commons.wikimedia.org/wiki/File:Medium_Nabeul_plate.jpg)
+- `tajine-nabeul-800.webp` : « Miniature tajine and stand », Nicholas Johnson, CC0 – [source](https://commons.wikimedia.org/wiki/File:Miniature_tajine_and_stand.jpg)
+- `tasse-nabeul-800.webp` : « Tunisian cup », Nicholas Johnson, CC0 – [source](https://commons.wikimedia.org/wiki/File:Tunisian_cup.jpg)
